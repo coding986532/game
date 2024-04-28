@@ -3,6 +3,8 @@ from venv import create
 from django.shortcuts import render, redirect
 from .models import Listings, Transaction
 # Create your views here.
+def home(request):
+    return render(request, 'home.html')
 def Listings(request):
     model = list(Listings.objects.all())
     mainlist = []

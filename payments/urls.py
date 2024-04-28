@@ -1,7 +1,8 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('', views.Listings, name='index'),
+    path('', views.home, name='index'),
+    path('listings', views.Listings, name='listings'),
     path('buy', views.buy, name='buy'),
     path('callback', views.callback, name='callback'),
     path('methodselect', views.methodselect, name='methodselect'),
