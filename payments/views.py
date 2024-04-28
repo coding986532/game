@@ -5,8 +5,8 @@ from .models import Listing, Transaction
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
-def Listings(request):
-    model = list(Listings.objects.all())
+def listonsale(request):
+    model = list(Listing.objects.all())
     mainlist = []
     for i in range(len(model)):
         dict1 = dict(model[i])
@@ -21,7 +21,7 @@ def Listings(request):
 def buy(request):
     if request.method == 'POST':
         property = request.POST['property']
-        model = Listings.objects.get(id=property)
+        model = Listing.objects.get(id=property)
         createtransaction = CreateTransaction(request, model)
         return redirect(reverse('methodselect'))
 def CreateTransaction(request, property):

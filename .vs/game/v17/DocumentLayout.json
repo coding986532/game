@@ -1,21 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\asaye\\source\\repos\\coding986532\\game\\",
+  "WorkspaceRootPath": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asaye\\source\\repos\\coding986532\\game\\payments\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:payments\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asaye\\source\\repos\\coding986532\\game\\payments\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:payments\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asaye\\source\\repos\\coding986532\\game\\payments\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\templates\\success.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:payments\\templates\\success.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\templates\\listings.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:payments\\templates\\listings.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\templates\\ingame.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:payments\\templates\\ingame.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\templates\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:payments\\templates\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\pay\\templates\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pay\\templates\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:payments\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asaye\\source\\repos\\coding986532\\game\\pay\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\pay\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pay\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -26,20 +46,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "urls.py",
-              "DocumentMoniker": "C:\\Users\\asaye\\source\\repos\\coding986532\\game\\payments\\urls.py",
+              "DocumentMoniker": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\urls.py",
               "RelativeDocumentMoniker": "payments\\urls.py",
-              "ToolTip": "C:\\Users\\asaye\\source\\repos\\coding986532\\game\\payments\\urls.py",
+              "ToolTip": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\urls.py",
               "RelativeToolTip": "payments\\urls.py",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANrSURBVDhPrVRdbxtFFD37Za/XcWIngcbGiRsUsnUIVeIoVHWqvoAED5EoEhJSw2Mi3njuS/9GfgFqJYIQAl4qEJGiBoRUBWJSpJDYdePWieuPbmJ7be/XcNdxKxmwxQNHujuauXPP3L135uB/g\u002BMsgzHGdaZtrK2tLdJw\u002B3zWGxR3yHHc55qm7W1sbBjtRce5QN\u002B3uwhXV1eXZVn\u002BNplMgsbOajeKxSJKpVJGFMW7x8fHXxmG8ef6\u002Bnqt44bQGdtIJBLTfr//5srKCiYnJxGJRBCNRl\u002BaqqovDvLQ/BVd1x3KtByLxc5SqZTpOnj38284OTlBJpPpMiJo\u002B0KhkH9\u002Bfn6GDvzY6/W\u002BqyjKeNtB6ElIp2J2drbLAoFA20e/jO3tbYHn\u002BSmq5yJZtO0g9CQsFArIZrNdVtMbGB2LYmZuETOX57nk0pJEWXrot8VOWG9Ct1ZUz7bJPgWaKWLnqIqtTBX3jwxsPW5i55jK5h8ZjMfjSifsvxH6FD8aUhC/Pq3jXiqPrx9k8eXPaXyxfYgmr4yo6sx5LQh9m5JOZ7B/kMbDg0fIlatotCgjxwZsG6Zh4klRg8crBcPhgTF29s0oY0\u002BVvk0Zn4rDDl3EXn0Q\u002BectGKaFAVlAUBFhWyaZhdfHGpH4RPkWA3eH2YM3\u002BjblwUEem/sV7B6d4o9cGQf5CnLPNFTO6m0yx7bg4cqC5DwKwsgk0Nz7tG8NK7qN/byG0qmOs3oTo4oNlR7Y3DiP5Bte3FiQEQmUwFtPALMchFVc6EsIjkejaYBnJi5dYHhHreGDt07x4VwNHy3U8MnVGsYHi0RWAWfrAmy9dw3dpuhVDT66YV7BxsoVB8uX0rge\u002Bw3XJnZxNZrChG8HMisAVh3MNmxwst63KQn1IqbHAu5mBH1NSIJDUkNGc1ikBy/McQVHeg7v9C8vb/jfQWoC9bUghgM\u002BVBOvIhx6CImaAIuCGeXBj9AuA8w3tQUxnAMvPwav/PgPtaFndNOme\u002BY\u002BtVw2g8pJDnb1GWJhnknOEceZ5fO7yHkpwgMMLP2EoffuQZ76AeLQbleGRFZotVrfbW5udlbOERpS\u002BCuX3x/2SUOTjNeHSUxFMI8NYbhCWWm05ZCE4nd3b5fA9gKpicyYdR31nc84q3CNWVV6akINypv3IUXdzL4nwj0A\u002BAuh04F\u002BHoZAlAAAAABJRU5ErkJggg==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHeSURBVDhPpVMxa1NRFP7ebZLSlgaltNpSVCySRUxL0NAh4FJpHWpxcZAUBEPG/AKHDsVBN5eGrCnoYKCDoDiUCKKBjtZBUZtJ2ojYJr40ue\u002B\u002B47k3VzD0hQr94OOed8853/k47z2cCETk2NAgk8mQDQMhhFjK5/Mb9vEotIDruoEsFovEzVvZbPaWLTcQ9uxCpVLp4l\u002Bk0\u002BlEPB5/wIPm7RVC9uxCMpm0UTdKpRKi0WiCQy3wUt8FCvw7VSNxbRapG4voDwucGgyjXC7bzH84ePt1HysbH/GhWoNstzA1OoSFhZuxQqFg8sfu4FutAd\u002BT8KSEYm7v7GJ0YnLClgYLaAcjU9N4Vx9Dda8OBz7OjwywSNsIXY39vEL7TxWpxv2eO3hWHUZ19xc8ti25UdvXzdpNWH0BDj8JiLOrPXfweOu9mRgRhOXUEPr7IiBfYeacB9HaBNRvQH4f6\u002BlgMERwGxJP7grEoq9shj9Uz\u002BVGpmIi4vXcwdzlcePgzLAuZPiSGw869Jg\u002Biw1Mvw50oLGcuoh71y8h1HwB1Js8UfFLnwScNnBhdYVLWsy1IwK5XM5GHaw9uu0LeSCMddZA32lz7zjOQxMcByK1SPU3O/Rjnai2fkjNz8/5L77TyQJ/AJc67LNf3QeWAAAAAElFTkSuQmCC",
               "WhenOpened": "2024-04-28T17:57:45.417Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "success.html",
+              "DocumentMoniker": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\templates\\success.html",
+              "RelativeDocumentMoniker": "payments\\templates\\success.html",
+              "ToolTip": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\templates\\success.html",
+              "RelativeToolTip": "payments\\templates\\success.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-28T23:42:36.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ingame.html",
+              "DocumentMoniker": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\templates\\ingame.html",
+              "RelativeDocumentMoniker": "payments\\templates\\ingame.html",
+              "ToolTip": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\templates\\ingame.html",
+              "RelativeToolTip": "payments\\templates\\ingame.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-28T23:42:34.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "home.html",
+              "DocumentMoniker": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\templates\\home.html",
+              "RelativeDocumentMoniker": "payments\\templates\\home.html",
+              "ToolTip": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\templates\\home.html",
+              "RelativeToolTip": "payments\\templates\\home.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-28T23:42:31.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "home.html",
+              "DocumentMoniker": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\pay\\templates\\home.html",
+              "RelativeDocumentMoniker": "pay\\templates\\home.html",
+              "ToolTip": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\pay\\templates\\home.html",
+              "RelativeToolTip": "pay\\templates\\home.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-28T23:42:27.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "listings.html",
+              "DocumentMoniker": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\templates\\listings.html",
+              "RelativeDocumentMoniker": "payments\\templates\\listings.html",
+              "ToolTip": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\templates\\listings.html",
+              "RelativeToolTip": "payments\\templates\\listings.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-28T23:42:20.444Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -53,36 +139,37 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "views.py",
-              "DocumentMoniker": "C:\\Users\\asaye\\source\\repos\\coding986532\\game\\payments\\views.py",
+              "DocumentMoniker": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\views.py",
               "RelativeDocumentMoniker": "payments\\views.py",
-              "ToolTip": "C:\\Users\\asaye\\source\\repos\\coding986532\\game\\payments\\views.py",
+              "ToolTip": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\views.py",
               "RelativeToolTip": "payments\\views.py",
-              "ViewState": "AQIAABgAAAAAAAAAAAAxwBkAAAAZAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANrSURBVDhPrVRdbxtFFD37Za/XcWIngcbGiRsUsnUIVeIoVHWqvoAED5EoEhJSw2Mi3njuS/9GfgFqJYIQAl4qEJGiBoRUBWJSpJDYdePWieuPbmJ7be/XcNdxKxmwxQNHujuauXPP3L135uB/g\u002BMsgzHGdaZtrK2tLdJw\u002B3zWGxR3yHHc55qm7W1sbBjtRce5QN\u002B3uwhXV1eXZVn\u002BNplMgsbOajeKxSJKpVJGFMW7x8fHXxmG8ef6\u002Bnqt44bQGdtIJBLTfr//5srKCiYnJxGJRBCNRl\u002BaqqovDvLQ/BVd1x3KtByLxc5SqZTpOnj38284OTlBJpPpMiJo\u002B0KhkH9\u002Bfn6GDvzY6/W\u002BqyjKeNtB6ElIp2J2drbLAoFA20e/jO3tbYHn\u002BSmq5yJZtO0g9CQsFArIZrNdVtMbGB2LYmZuETOX57nk0pJEWXrot8VOWG9Ct1ZUz7bJPgWaKWLnqIqtTBX3jwxsPW5i55jK5h8ZjMfjSifsvxH6FD8aUhC/Pq3jXiqPrx9k8eXPaXyxfYgmr4yo6sx5LQh9m5JOZ7B/kMbDg0fIlatotCgjxwZsG6Zh4klRg8crBcPhgTF29s0oY0\u002BVvk0Zn4rDDl3EXn0Q\u002BectGKaFAVlAUBFhWyaZhdfHGpH4RPkWA3eH2YM3\u002BjblwUEem/sV7B6d4o9cGQf5CnLPNFTO6m0yx7bg4cqC5DwKwsgk0Nz7tG8NK7qN/byG0qmOs3oTo4oNlR7Y3DiP5Bte3FiQEQmUwFtPALMchFVc6EsIjkejaYBnJi5dYHhHreGDt07x4VwNHy3U8MnVGsYHi0RWAWfrAmy9dw3dpuhVDT66YV7BxsoVB8uX0rge\u002Bw3XJnZxNZrChG8HMisAVh3MNmxwst63KQn1IqbHAu5mBH1NSIJDUkNGc1ikBy/McQVHeg7v9C8vb/jfQWoC9bUghgM\u002BVBOvIhx6CImaAIuCGeXBj9AuA8w3tQUxnAMvPwav/PgPtaFndNOme\u002BY\u002BtVw2g8pJDnb1GWJhnknOEceZ5fO7yHkpwgMMLP2EoffuQZ76AeLQbleGRFZotVrfbW5udlbOERpS\u002BCuX3x/2SUOTjNeHSUxFMI8NYbhCWWm05ZCE4nd3b5fA9gKpicyYdR31nc84q3CNWVV6akINypv3IUXdzL4nwj0A\u002BAuh04F\u002BHoZAlAAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-04-28T17:18:12.015Z"
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAdAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHeSURBVDhPpVMxa1NRFP7ebZLSlgaltNpSVCySRUxL0NAh4FJpHWpxcZAUBEPG/AKHDsVBN5eGrCnoYKCDoDiUCKKBjtZBUZtJ2ojYJr40ue\u002B\u002B47k3VzD0hQr94OOed8853/k47z2cCETk2NAgk8mQDQMhhFjK5/Mb9vEotIDruoEsFovEzVvZbPaWLTcQ9uxCpVLp4l\u002Bk0\u002BlEPB5/wIPm7RVC9uxCMpm0UTdKpRKi0WiCQy3wUt8FCvw7VSNxbRapG4voDwucGgyjXC7bzH84ePt1HysbH/GhWoNstzA1OoSFhZuxQqFg8sfu4FutAd\u002BT8KSEYm7v7GJ0YnLClgYLaAcjU9N4Vx9Dda8OBz7OjwywSNsIXY39vEL7TxWpxv2eO3hWHUZ19xc8ti25UdvXzdpNWH0BDj8JiLOrPXfweOu9mRgRhOXUEPr7IiBfYeacB9HaBNRvQH4f6\u002BlgMERwGxJP7grEoq9shj9Uz\u002BVGpmIi4vXcwdzlcePgzLAuZPiSGw869Jg\u002Biw1Mvw50oLGcuoh71y8h1HwB1Js8UfFLnwScNnBhdYVLWsy1IwK5XM5GHaw9uu0LeSCMddZA32lz7zjOQxMcByK1SPU3O/Rjnai2fkjNz8/5L77TyQJ/AJc67LNf3QeWAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-28T17:18:12.015Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "models.py",
-              "DocumentMoniker": "C:\\Users\\asaye\\source\\repos\\coding986532\\game\\payments\\models.py",
+              "DocumentMoniker": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\models.py",
               "RelativeDocumentMoniker": "payments\\models.py",
-              "ToolTip": "C:\\Users\\asaye\\source\\repos\\coding986532\\game\\payments\\models.py",
+              "ToolTip": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\payments\\models.py",
               "RelativeToolTip": "payments\\models.py",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANrSURBVDhPrVRdbxtFFD37Za/XcWIngcbGiRsUsnUIVeIoVHWqvoAED5EoEhJSw2Mi3njuS/9GfgFqJYIQAl4qEJGiBoRUBWJSpJDYdePWieuPbmJ7be/XcNdxKxmwxQNHujuauXPP3L135uB/g\u002BMsgzHGdaZtrK2tLdJw\u002B3zWGxR3yHHc55qm7W1sbBjtRce5QN\u002B3uwhXV1eXZVn\u002BNplMgsbOajeKxSJKpVJGFMW7x8fHXxmG8ef6\u002Bnqt44bQGdtIJBLTfr//5srKCiYnJxGJRBCNRl\u002BaqqovDvLQ/BVd1x3KtByLxc5SqZTpOnj38284OTlBJpPpMiJo\u002B0KhkH9\u002Bfn6GDvzY6/W\u002BqyjKeNtB6ElIp2J2drbLAoFA20e/jO3tbYHn\u002BSmq5yJZtO0g9CQsFArIZrNdVtMbGB2LYmZuETOX57nk0pJEWXrot8VOWG9Ct1ZUz7bJPgWaKWLnqIqtTBX3jwxsPW5i55jK5h8ZjMfjSifsvxH6FD8aUhC/Pq3jXiqPrx9k8eXPaXyxfYgmr4yo6sx5LQh9m5JOZ7B/kMbDg0fIlatotCgjxwZsG6Zh4klRg8crBcPhgTF29s0oY0\u002BVvk0Zn4rDDl3EXn0Q\u002BectGKaFAVlAUBFhWyaZhdfHGpH4RPkWA3eH2YM3\u002BjblwUEem/sV7B6d4o9cGQf5CnLPNFTO6m0yx7bg4cqC5DwKwsgk0Nz7tG8NK7qN/byG0qmOs3oTo4oNlR7Y3DiP5Bte3FiQEQmUwFtPALMchFVc6EsIjkejaYBnJi5dYHhHreGDt07x4VwNHy3U8MnVGsYHi0RWAWfrAmy9dw3dpuhVDT66YV7BxsoVB8uX0rge\u002Bw3XJnZxNZrChG8HMisAVh3MNmxwst63KQn1IqbHAu5mBH1NSIJDUkNGc1ikBy/McQVHeg7v9C8vb/jfQWoC9bUghgM\u002BVBOvIhx6CImaAIuCGeXBj9AuA8w3tQUxnAMvPwav/PgPtaFndNOme\u002BY\u002BtVw2g8pJDnb1GWJhnknOEceZ5fO7yHkpwgMMLP2EoffuQZ76AeLQbleGRFZotVrfbW5udlbOERpS\u002BCuX3x/2SUOTjNeHSUxFMI8NYbhCWWm05ZCE4nd3b5fA9gKpicyYdR31nc84q3CNWVV6akINypv3IUXdzL4nwj0A\u002BAuh04F\u002BHoZAlAAAAABJRU5ErkJggg==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHeSURBVDhPpVMxa1NRFP7ebZLSlgaltNpSVCySRUxL0NAh4FJpHWpxcZAUBEPG/AKHDsVBN5eGrCnoYKCDoDiUCKKBjtZBUZtJ2ojYJr40ue\u002B\u002B47k3VzD0hQr94OOed8853/k47z2cCETk2NAgk8mQDQMhhFjK5/Mb9vEotIDruoEsFovEzVvZbPaWLTcQ9uxCpVLp4l\u002Bk0\u002BlEPB5/wIPm7RVC9uxCMpm0UTdKpRKi0WiCQy3wUt8FCvw7VSNxbRapG4voDwucGgyjXC7bzH84ePt1HysbH/GhWoNstzA1OoSFhZuxQqFg8sfu4FutAd\u002BT8KSEYm7v7GJ0YnLClgYLaAcjU9N4Vx9Dda8OBz7OjwywSNsIXY39vEL7TxWpxv2eO3hWHUZ19xc8ti25UdvXzdpNWH0BDj8JiLOrPXfweOu9mRgRhOXUEPr7IiBfYeacB9HaBNRvQH4f6\u002BlgMERwGxJP7grEoq9shj9Uz\u002BVGpmIi4vXcwdzlcePgzLAuZPiSGw869Jg\u002Biw1Mvw50oLGcuoh71y8h1HwB1Js8UfFLnwScNnBhdYVLWsy1IwK5XM5GHaw9uu0LeSCMddZA32lz7zjOQxMcByK1SPU3O/Rjnai2fkjNz8/5L77TyQJ/AJc67LNf3QeWAAAAAElFTkSuQmCC",
               "WhenOpened": "2024-04-28T17:36:07.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "settings.py",
-              "DocumentMoniker": "C:\\Users\\asaye\\source\\repos\\coding986532\\game\\pay\\settings.py",
+              "DocumentMoniker": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\pay\\settings.py",
               "RelativeDocumentMoniker": "pay\\settings.py",
-              "ToolTip": "C:\\Users\\asaye\\source\\repos\\coding986532\\game\\pay\\settings.py",
+              "ToolTip": "C:\\Users\\ls2\\OneDrive - LucidBridge (1)\\Documents\\GitHub\\game\\pay\\settings.py",
               "RelativeToolTip": "pay\\settings.py",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACcAAAAPAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANrSURBVDhPrVRdbxtFFD37Za/XcWIngcbGiRsUsnUIVeIoVHWqvoAED5EoEhJSw2Mi3njuS/9GfgFqJYIQAl4qEJGiBoRUBWJSpJDYdePWieuPbmJ7be/XcNdxKxmwxQNHujuauXPP3L135uB/g\u002BMsgzHGdaZtrK2tLdJw\u002B3zWGxR3yHHc55qm7W1sbBjtRce5QN\u002B3uwhXV1eXZVn\u002BNplMgsbOajeKxSJKpVJGFMW7x8fHXxmG8ef6\u002Bnqt44bQGdtIJBLTfr//5srKCiYnJxGJRBCNRl\u002BaqqovDvLQ/BVd1x3KtByLxc5SqZTpOnj38284OTlBJpPpMiJo\u002B0KhkH9\u002Bfn6GDvzY6/W\u002BqyjKeNtB6ElIp2J2drbLAoFA20e/jO3tbYHn\u002BSmq5yJZtO0g9CQsFArIZrNdVtMbGB2LYmZuETOX57nk0pJEWXrot8VOWG9Ct1ZUz7bJPgWaKWLnqIqtTBX3jwxsPW5i55jK5h8ZjMfjSifsvxH6FD8aUhC/Pq3jXiqPrx9k8eXPaXyxfYgmr4yo6sx5LQh9m5JOZ7B/kMbDg0fIlatotCgjxwZsG6Zh4klRg8crBcPhgTF29s0oY0\u002BVvk0Zn4rDDl3EXn0Q\u002BectGKaFAVlAUBFhWyaZhdfHGpH4RPkWA3eH2YM3\u002BjblwUEem/sV7B6d4o9cGQf5CnLPNFTO6m0yx7bg4cqC5DwKwsgk0Nz7tG8NK7qN/byG0qmOs3oTo4oNlR7Y3DiP5Bte3FiQEQmUwFtPALMchFVc6EsIjkejaYBnJi5dYHhHreGDt07x4VwNHy3U8MnVGsYHi0RWAWfrAmy9dw3dpuhVDT66YV7BxsoVB8uX0rge\u002Bw3XJnZxNZrChG8HMisAVh3MNmxwst63KQn1IqbHAu5mBH1NSIJDUkNGc1ikBy/McQVHeg7v9C8vb/jfQWoC9bUghgM\u002BVBOvIhx6CImaAIuCGeXBj9AuA8w3tQUxnAMvPwav/PgPtaFndNOme\u002BY\u002BtVw2g8pJDnb1GWJhnknOEceZ5fO7yHkpwgMMLP2EoffuQZ76AeLQbleGRFZotVrfbW5udlbOERpS\u002BCuX3x/2SUOTjNeHSUxFMI8NYbhCWWm05ZCE4nd3b5fA9gKpicyYdR31nc84q3CNWVV6akINypv3IUXdzL4nwj0A\u002BAuh04F\u002BHoZAlAAAAABJRU5ErkJggg==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHeSURBVDhPpVMxa1NRFP7ebZLSlgaltNpSVCySRUxL0NAh4FJpHWpxcZAUBEPG/AKHDsVBN5eGrCnoYKCDoDiUCKKBjtZBUZtJ2ojYJr40ue\u002B\u002B47k3VzD0hQr94OOed8853/k47z2cCETk2NAgk8mQDQMhhFjK5/Mb9vEotIDruoEsFovEzVvZbPaWLTcQ9uxCpVLp4l\u002Bk0\u002BlEPB5/wIPm7RVC9uxCMpm0UTdKpRKi0WiCQy3wUt8FCvw7VSNxbRapG4voDwucGgyjXC7bzH84ePt1HysbH/GhWoNstzA1OoSFhZuxQqFg8sfu4FutAd\u002BT8KSEYm7v7GJ0YnLClgYLaAcjU9N4Vx9Dda8OBz7OjwywSNsIXY39vEL7TxWpxv2eO3hWHUZ19xc8ti25UdvXzdpNWH0BDj8JiLOrPXfweOu9mRgRhOXUEPr7IiBfYeacB9HaBNRvQH4f6\u002BlgMERwGxJP7grEoq9shj9Uz\u002BVGpmIi4vXcwdzlcePgzLAuZPiSGw869Jg\u002Biw1Mvw50oLGcuoh71y8h1HwB1Js8UfFLnwScNnBhdYVLWsy1IwK5XM5GHaw9uu0LeSCMddZA32lz7zjOQxMcByK1SPU3O/Rjnai2fkjNz8/5L77TyQJ/AJc67LNf3QeWAAAAAElFTkSuQmCC",
               "WhenOpened": "2024-04-28T14:16:29.672Z"
             },
             {
