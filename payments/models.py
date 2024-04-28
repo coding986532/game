@@ -16,7 +16,7 @@ property_type_choices = (
     ('Warehouse', 'Warehouse'),
     ('Storage', 'Storage'),
     ('Office', 'Office'),
-    ('Other', 'Other'),
+    ('Other', 'Other'), 
 
 )
 class Listing(models.Model):
