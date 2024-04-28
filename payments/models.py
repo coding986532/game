@@ -20,15 +20,18 @@ property_type_choices = (
 
 ) 
 class Listing(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, help_text="Name of the property, street specifically, again.")
     property_type = models.CharField(max_length=500, choices=property_type_choices)
+    square_feet = models.CharField(max_length=100, blank=True)
+    lot_size = models.CharField(max_length=100, blank=True)
+    stories = models.CharField(max_length=100, blank=True)
     street = models.CharField(max_length=500)
     city = models.CharField(max_length=100)
     zip = models.CharField(max_length=100, blank=True)
-    state = models.CharField(max_length=100)
+    state = models.CharField(max_length=100, blank=True)
     territory = models.CharField(max_length=100)
     price = models.IntegerField()
-    image = models.URLField()
+    image = models.URLField(blank=True)
     Owner = models.ForeignKey(User, on_delete=models.CASCADE)
     
 class Transaction(models.Model):

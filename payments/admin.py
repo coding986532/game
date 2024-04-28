@@ -4,7 +4,7 @@ from django.contrib import admin
 
 from .models import Listing, Transaction
 class ListingAdmin(admin.ModelAdmin):
-    list_display = ['name', 'price', 'Owner']
+    list_display = ['name', 'price', 'Owner', 'property_type','city','territory', 'zip']
 
 admin.site.register(Listing, ListingAdmin)
 
