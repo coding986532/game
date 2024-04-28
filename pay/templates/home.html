@@ -3,9 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LucidBridge</title>
+    <title>Modern Homepage</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 48px;
+            font-weight: bold;
+            animation: fadeInUp 1s ease;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #666;
+            animation: fadeInUp 1s ease;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            animation: fadeInUp 1s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            animation: fadeInUp 1s ease;
+        }
+        .section {
+            padding: 50px 0;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .section-heading {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .section-content {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .placeholder {
+            height: 500px; /* Placeholder height */
+        }
+    </style>
 </head>
 <body>
-    <h1>LucidBridge</h1>
+
+<div class="container">
+    <h1>Welcome to Our Website</h1>
+    <p>This is a modern homepage with a sleek design.</p>
+    <p>Explore our services and products:</p>
+    <div style="text-align: center;">
+        <a href="#" class="button">Services</a>
+        <a href="#" class="button">Products</a>
+    </div>
+</div>
+
+<div class="section" id="section1">
+    <div class="container">
+        <h2 class="section-heading">Section 1</h2>
+        <p class="section-content">This is the first section of the page.</p>
+        <div class="placeholder"></div>
+    </div>
+</div>
+
+<div class="section" id="section2">
+    <div class="container">
+        <h2 class="section-heading">Section 2</h2>
+        <p class="section-content">This is the second section of the page.</p>
+        <div class="placeholder"></div>
+    </div>
+</div>
+
+<!-- Add more sections as needed -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if (scroll > 200) {
+                $("body").css("background-color", "#e9ecef"); // Change background color when scrolled
+            } else {
+                $("body").css("background-color", "#f9f9f9");
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
