@@ -1,7 +1,7 @@
 from django.urls import reverse
 from venv import create
 from django.shortcuts import render, redirect
-from .models import Listings, Transaction
+from .models import Listing, Transaction
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
