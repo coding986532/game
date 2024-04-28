@@ -18,7 +18,7 @@ property_type_choices = (
     ('Office', 'Office'),
     ('Other', 'Other'), 
 
-)
+) 
 class Listing(models.Model):
     name = models.CharField(max_length=100)
     property_type = models.CharField(max_length=500, choices=property_type_choices)
