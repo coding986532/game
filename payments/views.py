@@ -1,7 +1,7 @@
 from django.urls import reverse
 from venv import create
 from django.shortcuts import render, redirect
-from .models import Listing, Transaction
+from .models import Listing, Transaction, Balance
 # Create your views here.
 def home(request):
     listings = Listing.objects.all()
@@ -48,8 +48,17 @@ def payment(request):
     if model.method == 'In Game':
         return render(request, 'ingame.html')
     
-
+def ingamepay(request):
+    if request.method != 'post':
+        return Exception
+    else:
+        model2 = Balance.objects.get(User=request.user)
+        model = Transaction.objects.get(id=request.cookies['transaction'])
+        model2.balance = model2.balance - model.price
+        model2.save()
+        return redirect(reverse('callback'))
 def callback(request):
+
     model = Transaction.objects.get(id=request.cookies['transaction'])
     model.Complete = True
     model2 = Listing.objects.get(id=model.Property.id)
