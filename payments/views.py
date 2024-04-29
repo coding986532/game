@@ -4,7 +4,8 @@ from django.shortcuts import render, redirect
 from .models import Listing, Transaction
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
+    listings = Listing.objects.all()
+    return render(request, 'home.html', {'listings': listings})
 
 def details(request):
     return render(request, 'details.htm')

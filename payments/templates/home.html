@@ -6,6 +6,13 @@
     <title>LucidBridge</title>
 </head>
 <body>
+    {% block content %}
+    {% for listing in listings %}
     <h1>LucidBridge</h1>
+    <h3>Recent Listings:</h3>
+    <p>{{ listing.street }}</p>
+    {% endfor %}
+
 </body>
+{% endblock %}
 </html>
