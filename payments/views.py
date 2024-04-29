@@ -6,9 +6,10 @@ from .models import Listing, Transaction
 def home(request):
     listings = Listing.objects.all()
     return render(request, 'home.html', {'listings': listings})
+def details(request, pk):
+    listings = Listing.objects.get(pk=pk)
+    return render(request, "details.htm", {'data': listings})
 
-def details(request):
-    return render(request, 'details.htm')
 def listonsale(request):
     listings = Listing.objects.all()
     return render(request, 'listings.html', {'listings': listings})

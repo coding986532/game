@@ -20,12 +20,13 @@
 
         <input type="hidden" name="propertyid" value="{{ listing.id }}">
         <input type="submit" value="Purchase"> 
-        <input type="submit" value="View Details">
+       
 
         
       </form>
           <!--         <p>Address:  {{ listing.street }}, {{ listing.city }}, {{ listing.zip  }}, {{ listing.state }}, {{ listing.territory }}</p>
 --->
+<a href="{{listing.get_absolute_url}} ">details</a>
     {% endfor %}
   </ul> 
 {% endblock %}

@@ -1,5 +1,6 @@
-from turtle import mode
+
 from django.db import models
+from django.urls import reverse
 from django.contrib.auth.models import User
 # Create your models here.
 
@@ -33,6 +34,9 @@ class Listing(models.Model):
     price = models.IntegerField()
     image = models.URLField(blank=True)
     Owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    def get_absolute_url(self):
+        path = reverse('propdetails', args=[self.pk])
+        return path
     
 class Transaction(models.Model):
     Property = models.ForeignKey(Listing, on_delete=models.CASCADE)

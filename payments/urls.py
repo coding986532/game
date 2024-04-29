@@ -7,4 +7,5 @@ urlpatterns = [
     path('callback', views.callback, name='callback'),
     path('methodselect', views.methodselect, name='methodselect'),
     path('payment', views.payment, name='payment'),
+    path('details/<int:pk>', views.details, name='propdetails')
 ]
