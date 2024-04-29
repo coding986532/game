@@ -39,7 +39,7 @@ class Listing(models.Model):
         return path
     
 class Transaction(models.Model):
-    Property = models.ForeignKey(Listing, on_delete=models.CASCADE)
+    Property = models.ForeignKey(Listing, on_delete=models.CASCADE, primary_key=False)
     Buyer = models.ForeignKey(User, on_delete=models.CASCADE)
     Method = models.CharField(max_length=100)
     price = models.IntegerField()
