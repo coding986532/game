@@ -1,0 +1,26 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h1>Listings</h1>
+{% for obj in listing %}
+<br>
+  
+    <img src="{{ listing.image.url }}" alt="{{ listing.name }} Image" class="mt-3">
+
+    <h2>{{ listing.street }}</h2>
+    <h4> Type: {{ listing.property_type }}</h4>
+
+    <p>Price: {{ listing.price }} LBG</p>
+    <p>City: {{ listing.city }}</p>
+    <p>State: {{ listing.state }}</p>
+    <p>Territory: {{ listing.territory }}</p>
+    <p>Zip: {{ listing.zip }}</p>  
+<form method="post" action="/listing/buy">
+    {% csrf_token %}
+
+    <input type="hidden" name="propertyid" value="{{ listing.id }}">
+    <input type="submit" value="Purchase">
+    
+  </form>
+  {% endfor %}
+  {% endblock %}
