@@ -44,6 +44,8 @@ class Transaction(models.Model):
     Method = models.CharField(max_length=100)
     price = models.IntegerField()
     Complete = models.BooleanField()
+    def get_absolute_url(self):
+        return reverse('buy', args=[self.pk])
 class Balance(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     money = models.IntegerField()

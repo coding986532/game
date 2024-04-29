@@ -18,10 +18,12 @@ def buy(request):
     if request.method == 'POST':
         property = request.POST['propertyid']
         model = Listing.objects.get(id=property)
-        response = redirect(reverse('methodselect'))
-        createtransaction = CreateTransaction(response, model, request.user)
+        
+        createtransaction = CreateTransaction(model, request.user)
+        response = redirect(reverse('methodselect', kwargs={'txid': createtransaction}))
         return response
-def CreateTransaction(request, property, user):
+    
+def CreateTransaction( property, user):
     model = Transaction()
     model.Property = property
     model.Buyer = user
@@ -29,42 +31,41 @@ def CreateTransaction(request, property, user):
     model.method = 'N/A'
     model.price = property.price
     model.save()
-    request.cookies['transaction'] = model.id
+
     return model.id
-def methodselect(request):
+def methodselect(request, txid):
     if request.method == 'POST':
-        response = redirect(reverse('payment'))
-        response2 = HttpResponse
-        model = Transaction.objects.get(id=response2.COOKIES.get('transaction'))
-        model.method = request.POST['paymethod']
+        response = redirect(reverse('payment', kwargs={'txid': txid}))
+        model = Transaction.objects.get(id=txid)
+        model.Method = request.POST['paymethod']
         model.save()
         return response
     return render(request, 'methodselect.html')
 
-def payment(request):
+def payment(request, txid):
     response = render(request, 'ingame.html')
-    print(request.cookies.get('transaction'))
-    model = Transaction.objects.get(id=response.cookies.get('transaction'))
-    if model.method == 'N/A':
+    model = Transaction.objects.get(id=txid)
+    print(model.Method)
+    if model.Method == 'N/A':
         return Exception
     elif model.Complete != False:
         return Exception
     
-    if model.method == 'In Game':
+    if model.Method == 'In Game':
         return response
     
-def ingamepay(request):
+def ingamepay(request, txid):
     if request.method != 'post':
         return Exception
     else:
         model2 = Balance.objects.get(User=request.user)
-        model = Transaction.objects.get(id=request.cookies['transaction'])
+        model = Transaction.objects.get(id=txid)
         model2.balance = model2.balance - model.price
         model2.save()
-        return redirect(reverse('callback'))
-def callback(request):
+        return redirect(reverse('callback', kwargs={'txid': txid}))
+def callback(request, txid):
 
-    model = Transaction.objects.get(id=request.cookies['transaction'])
+    model = Transaction.objects.get(id=txid)
     model.Complete = True
     model2 = Listing.objects.get(id=model.Property.id)
     model2.Owner = model.Buyer
