@@ -6,30 +6,22 @@ from .models import Listing, Transaction
 def home(request):
     return render(request, 'home.html')
 def listonsale(request):
-    model = list(Listing.objects.all())
-    mainlist = []
-    for i in range(len(model)):
-        dict1 = dict(model[i])
-        data = {
-            'name': dict1['name'],
-            'price': dict1['price'],
-            'location': dict1['location'],
-            'image': dict1['image'],
-            }
-        mainlist.append(data)
-    return render(request, 'listings.html', {'mainlist': mainlist})
+    listings = Listing.objects.all()
+    return render(request, 'listings.html', {'listings': listings})
 def buy(request):
     if request.method == 'POST':
-        property = request.POST['property']
+        property = request.POST['propertyid']
         model = Listing.objects.get(id=property)
-        createtransaction = CreateTransaction(request, model)
-        return redirect(reverse('methodselect'))
-def CreateTransaction(request, property):
+        response = redirect(reverse('methodselect'))
+        createtransaction = CreateTransaction(response, model, request.user)
+        return response
+def CreateTransaction(request, property, user):
     model = Transaction()
     model.Property = property
-    model.Buyer = request.user  
+    model.Buyer = user
     model.Complete = False
     model.method = 'N/A'
+    model.price = property.price
     model.save()
     request.cookies['transaction'] = model.id
     return model.id
@@ -56,7 +48,7 @@ def payment(request):
 def callback(request):
     model = Transaction.objects.get(id=request.cookies['transaction'])
     model.Complete = True
-    model2 = Listings.objects.get(id=model.Property.id)
+    model2 = Listing.objects.get(id=model.Property.id)
     model2.Owner = model.Buyer
     model2.save()
     model.save()

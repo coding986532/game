@@ -1,0 +1,20 @@
+
+{% block content %}
+  <h1>Listings</h1>
+  <ul>
+    {% for listing in listings %}
+      <li>
+        <h2>{{ listing.name }}</h2>
+        <p>Price: {{ listing.price }}</p>
+        <p>Location: {{ listing.location }}</p>
+        <img src="{{ listing.image.url }}" alt="{{ listing.name }} Image">
+      </li>
+      <form method="post" action="/listing/buy">
+        {% csrf_token %}
+
+        <input type="hidden" name="propertyid" value="{{ listing.id }}">
+        <input type="submit">
+      </form>
+    {% endfor %}
+  </ul>
+{% endblock %}
