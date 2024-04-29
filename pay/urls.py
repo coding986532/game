@@ -22,6 +22,6 @@ from payments import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("" , views.home, name='index', ),
-    path("listings/" , views.home, name='listings-page', ),
+    path("listings/" , views.listonsale, name='listings-page', ),
     path('listing/', include('payments.urls')),
 ]
