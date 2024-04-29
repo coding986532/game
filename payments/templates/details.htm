@@ -15,6 +15,8 @@
     <p>State: {{ listing.state }}</p>
     <p>Territory: {{ listing.territory }}</p>
     <p>Zip: {{ listing.zip }}</p>  
+    <p>Square Feet: {{ listing.square_feet }} sqft</p>  
+    <p> Lot size: {{ listing.lot_size }}</p>
 <form method="post" action="/listing/buy">
     {% csrf_token %}
 

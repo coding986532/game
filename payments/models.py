@@ -26,6 +26,8 @@ class Listing(models.Model):
     square_feet = models.CharField(max_length=100, blank=True)
     lot_size = models.CharField(max_length=100, blank=True)
     stories = models.CharField(max_length=100, blank=True)
+    bedrooms = models.CharField(max_length=100, blank=True)
+    bathrooms = models.CharField(max_length=100, blank=True)
     street = models.CharField(max_length=500)
     city = models.CharField(max_length=100)
     zip = models.CharField(max_length=100, blank=True)
@@ -33,6 +35,7 @@ class Listing(models.Model):
     territory = models.CharField(max_length=100)
     price = models.IntegerField()
     image = models.URLField(blank=True)
+    description = models.TextField(blank=True, max_length=1000)
     Owner = models.ForeignKey(User, on_delete=models.CASCADE)
     def get_absolute_url(self):
         path = reverse('propdetails', args=[self.pk])

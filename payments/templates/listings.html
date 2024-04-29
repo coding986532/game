@@ -12,7 +12,7 @@
             <div class="card-body">
               <h3>{{listing.price}} LBD</h3>
               <h6 class="card-title">{{ listing.street }} <br>{{listing.city}}, {{listing.state}}, {{listing.zip}}, {{listing.territory}}</h6>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">{{listing.name}} for sale! This property is located at {{listing.street}} in {{listing.city}}, {{listing.state}}, {{listing.zip}}.</p>
               <form method="post" action="/listing/buy">
                 {% csrf_token %}
                 <input type="hidden" name="propertyid" value="{{ listing.id }}">
