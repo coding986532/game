@@ -2,7 +2,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Listings</h1>
-{% for listing in listings %}
+
 <br>
   
     <img src="{{ listing.image.url }}" alt="{{ listing.name }} Image" class="mt-3">
@@ -22,5 +22,5 @@
     <input type="submit" value="Purchase">
     
   </form>
-  {% endfor%}
+
   {% endblock %}
