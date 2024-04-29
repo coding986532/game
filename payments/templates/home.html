@@ -8,8 +8,8 @@
 <body>
     {% block content %}
     {% for listing in listings %}
-    <h1>LucidBridge</h1>
-    <h3>Recent Listings:</h3>
+   <h1>LucidBridge</h1>
+   <a href="listings"> <h3>Recent Listings:</h3> </a>
     <p>{{ listing.street }}</p>
     {% endfor %}
 
