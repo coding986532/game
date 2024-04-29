@@ -13,18 +13,18 @@
         <p>City: {{ listing.city }}</p>
         <p>State: {{ listing.state }}</p>
         <p>Territory: {{ listing.territory }}</p>
-        <p>Zip: {{ listing.zip }}</p>
+        <p>Zip: {{ listing.zip }}</p>  
       </li>
       <form method="post" action="/listing/buy">
         {% csrf_token %}
 
         <input type="hidden" name="propertyid" value="{{ listing.id }}">
-        <input type="submit" value="Purchase">
+        <input type="submit" value="Purchase"> 
         <input type="submit" value="View Details">
 
         
       </form>
-          <!--         <p>Address:  {{ listing.street }}, {{ listing.city }}, {{ listing.zip }}, {{ listing.state }}, {{ listing.territory }}</p>
+          <!--         <p>Address:  {{ listing.street }}, {{ listing.city }}, {{ listing.zip  }}, {{ listing.state }}, {{ listing.territory }}</p>
 --->
     {% endfor %}
   </ul>
