@@ -4,19 +4,23 @@
   <ul>
     {% for listing in listings %}
       <li>
-        <h2>{{ listing.name }}</h2>
+        <img src="{{ listing.image.url }}" alt="{{ listing.name }} Image">
+
+        <h2>{{ listing.street }}</h2>
+        <h4>  {{ listing.property_type }}</h4>
+
         <p>Price: {{ listing.price }} LBG</p>
         <p>City: {{ listing.city }}</p>
         <p>State: {{ listing.state }}</p>
         <p>Territory: {{ listing.territory }}</p>
         <p>Zip: {{ listing.zip }}</p>
-        <img src="{{ listing.image.url }}" alt="{{ listing.name }} Image">
       </li>
       <form method="post" action="/listing/buy">
         {% csrf_token %}
 
         <input type="hidden" name="propertyid" value="{{ listing.id }}">
         <input type="submit" value="Purchase">
+        
       </form>
     {% endfor %}
   </ul>
