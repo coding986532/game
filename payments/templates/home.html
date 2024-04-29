@@ -11,7 +11,8 @@
    <h1>LucidBridge</h1>
    <a href="listings"> <h3>Recent Listings:</h3> </a>
  <ul>
-   <li>{{ listing.street }}</li>
+   <li>{{ listing.street }} <a href="{{listing.get_absolute_url}} ">Details</a>
+   </li>
  </ul> 
    {% endfor %}
 
