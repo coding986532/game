@@ -8,13 +8,16 @@
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-2">
         {% for listing in listings %}
         <div class="col-sm-4 p-2">
-          <div class="card" style="max-width: 26em; height: 50em">
+          <div class="card" style="max-width: 26em; height: 25em">
             <div class="card-body">
               <h3>{{listing.price}} LBD</h3>
               <h6 class="card-title">{{ listing.street }} <br>{{listing.city}}, {{listing.state}}, {{listing.zip}}, {{listing.territory}}</h6>
-              <p class="card-text">{{listing.name}} for sale! {{listing.description}}This property is located at {{listing.street}} in {{listing.city}}, {{listing.state}}, {{listing.zip}}.</p>
-             <br>
-             <br>   
+              <p class="card-text mb-5">{{listing.name}} for sale! This property is located at {{listing.street}} in {{listing.city}}, {{listing.state}}, {{listing.zip}}.</p>
+          <br>
+          <br>
+          <br>
+
+          
               <form method="post" action="/listing/buy">
                 {% csrf_token %}
                 <input type="hidden" name="propertyid" value="{{ listing.id }}">

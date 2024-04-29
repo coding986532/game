@@ -35,7 +35,8 @@ class Listing(models.Model):
     territory = models.CharField(max_length=100)
     price = models.IntegerField()
     image = models.URLField(blank=True)
-    description = models.TextField(blank=True, max_length=1000)
+    front_description = models.TextField(blank=True, max_length=251)
+    back_description = models.TextField(blank=True, max_length=1000)
     Owner = models.ForeignKey(User, on_delete=models.CASCADE)
     def get_absolute_url(self):
         path = reverse('propdetails', args=[self.pk])
