@@ -1,6 +1,7 @@
 from django.urls import reverse
 from venv import create
 from django.shortcuts import render, redirect
+from django.http import HttpResponse
 from .models import Listing, Transaction, Balance
 # Create your views here.
 def home(request):
@@ -32,21 +33,25 @@ def CreateTransaction(request, property, user):
     return model.id
 def methodselect(request):
     if request.method == 'POST':
-        model = Transaction.objects.get(id=request.cookies['transaction'])
+        response = redirect(reverse('payment'))
+        response2 = HttpResponse
+        model = Transaction.objects.get(id=response2.COOKIES.get('transaction'))
         model.method = request.POST['paymethod']
         model.save()
-        return redirect(reverse('payment'))
+        return response
     return render(request, 'methodselect.html')
 
 def payment(request):
-    model = Transaction.objects.get(id=request.cookies['transaction'])
+    response = render(request, 'ingame.html')
+    print(request.cookies.get('transaction'))
+    model = Transaction.objects.get(id=response.cookies.get('transaction'))
     if model.method == 'N/A':
         return Exception
     elif model.Complete != False:
         return Exception
     
     if model.method == 'In Game':
-        return render(request, 'ingame.html')
+        return response
     
 def ingamepay(request):
     if request.method != 'post':
