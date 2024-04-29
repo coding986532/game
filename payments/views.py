@@ -8,7 +8,7 @@ def home(request):
     return render(request, 'home.html', {'listings': listings})
 def details(request, pk):
     listings = Listing.objects.get(pk=pk)
-    return render(request, "details.htm", {'data': listings})
+    return render(request, "details.htm", {'listing': listings})
 
 def listonsale(request):
     listings = Listing.objects.all()
@@ -31,14 +31,13 @@ def CreateTransaction(request, property, user):
     request.cookies['transaction'] = model.id
     return model.id
 def methodselect(request):
-    return render(request, 'methodselect.html')
-def PayMethod(request, transaction, method):
     if request.method == 'POST':
-        model = Transaction.objects.get(id=transaction)
-        model.method = method
+        model = Transaction.objects.get(id=request.cookies['transaction'])
+        model.method = request.POST['paymethod']
         model.save()
-    else:
-        return Exception('Error')
+        return redirect(reverse('payment'))
+    return render(request, 'methodselect.html')
+
 def payment(request):
     model = Transaction.objects.get(id=request.cookies['transaction'])
     if model.method == 'N/A':
