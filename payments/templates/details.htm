@@ -11,6 +11,7 @@
     <h4> Type: {{ listing.property_type }}</h4>
 
     <p>Price: {{ listing.price }} LBG</p>
+    
     <p>City: {{ listing.city }}</p>
     <p>State: {{ listing.state }}</p>
     <p>Territory: {{ listing.territory }}</p>
@@ -19,9 +20,9 @@
     <p> Lot size: {{ listing.lot_size }}</p>
     <p>Bedrooms: {{ listing.bedrooms }}</p>
     <p>Bathrooms: {{ listing.bathrooms }}</p>
-    <p>Stories: {{ listing.levels }}</p>
+    <p>Levels: {{ listing.levels }}</p>
     <br>
-    <p>Description: {{ listing.description }}</p>
+    <p>Description: {{ listing.back_description }}</p>
 <form method="post" action="/listing/buy">
     {% csrf_token %}
 

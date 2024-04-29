@@ -8,22 +8,19 @@
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-2">
         {% for listing in listings %}
         <div class="col-sm-4 p-2">
-          <div class="card" style="max-width: 26em; height: 25em">
+          <div class="card" style="max-width: 26em; height: 19em">
             <div class="card-body">
               <h3>{{listing.price}} LBD</h3>
               <h6 class="card-title">{{ listing.street }} <br>{{listing.city}}, {{listing.state}}, {{listing.zip}}, {{listing.territory}}</h6>
-              <p class="card-text mb-5">{{listing.name}} for sale! This property is located at {{listing.street}} in {{listing.city}}, {{listing.state}}, {{listing.zip}}.</p>
-          <br>
-          <br>
-          <br>
-
+              <p class="card-text mb-5">{{listing.front_description}} This property is located at {{listing.street}} in {{listing.city}}, {{listing.state}}, {{listing.zip}}.</p>
+       
           
               <form method="post" action="/listing/buy">
                 {% csrf_token %}
                 <input type="hidden" name="propertyid" value="{{ listing.id }}">
-                <input type="submit" value="Purchase" class="btn btn-sm btn-primary mt-2 w-100">
+                <input type="submit" value="Purchase" class="btn btn-sm btn-primary mt-2 w-100 my-0">
               </form>
-              <a href="{{ listing.get_absolute_url }}" class="btn btn-sm btn-outline-secondary mt-2 w-100">Details</a>
+              <a href="{{ listing.get_absolute_url }}" class="btn btn-sm btn-outline-secondary mt-2 w-100 mb-4">Details</a>
             </div>
           </div>
         </div>
