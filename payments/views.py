@@ -5,6 +5,9 @@ from .models import Listing, Transaction
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
+
+def details(request):
+    return render(request, 'details.htm')
 def listonsale(request):
     listings = Listing.objects.all()
     return render(request, 'listings.html', {'listings': listings})

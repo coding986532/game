@@ -7,7 +7,7 @@
         <img src="{{ listing.image.url }}" alt="{{ listing.name }} Image">
 
         <h2>{{ listing.street }}</h2>
-        <h4>  {{ listing.property_type }}</h4>
+        <h4> Type: {{ listing.property_type }}</h4>
 
         <p>Price: {{ listing.price }} LBG</p>
         <p>City: {{ listing.city }}</p>
@@ -22,6 +22,8 @@
         <input type="submit" value="Purchase">
         
       </form>
+          <!--         <p>Address:  {{ listing.street }}, {{ listing.city }}, {{ listing.zip }}, {{ listing.state }}, {{ listing.territory }}</p>
+--->
     {% endfor %}
   </ul>
 {% endblock %}

@@ -1,0 +1,7 @@
+<form method="post" action="/listing/buy">
+    {% csrf_token %}
+
+    <input type="hidden" name="propertyid" value="{{ listing.id }}">
+    <input type="submit" value="Purchase">
+    
+  </form>
