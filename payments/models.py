@@ -44,3 +44,6 @@ class Transaction(models.Model):
     Method = models.CharField(max_length=100)
     price = models.IntegerField()
     Complete = models.BooleanField()
+class Balance(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    money = models.IntegerField()
