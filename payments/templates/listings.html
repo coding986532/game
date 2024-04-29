@@ -2,6 +2,8 @@
 
 {% block content %}
 
+
+<br>
   <h1>Listings</h1>
   <ul>
     {% for listing in listings %}
@@ -21,14 +23,14 @@
         {% csrf_token %}
 
         <input type="hidden" name="propertyid" value="{{ listing.id }}">
-        <input type="submit" value="Purchase"> 
+        <input type="submit" value="Purchase" class="btn btn-sm btn-primary mt-2 w-25"> 
        
 
         
       </form>
           <!--         <p>Address:  {{ listing.street }}, {{ listing.city }}, {{ listing.zip  }}, {{ listing.state }}, {{ listing.territory }}</p>
 --->
-<a href="{{listing.get_absolute_url}} ">Details</a>
+<a href="{{listing.get_absolute_url}} " class="btn btn-sm btn-outline-secondary mt-2 w-25">Details</a>
     {% endfor %}
   </ul> 
 {% endblock %}
