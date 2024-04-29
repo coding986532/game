@@ -56,3 +56,24 @@
       </form>
           <!--         <p>Address:  {{ listing.street }}, {{ listing.city }}, {{ listing.zip  }}, {{ listing.state }}, {{ listing.territory }}</p>
 --->
+
+<!--
+    {% for listing in listings %}
+        <div class="col-sm-4 p-2">
+          <div class="card" style="max-width: 26em;">
+            <div class="card-body">
+              <h3>{{listing.price}} LBD</h3>
+              <h6 class="card-title">{{ listing.street }} <br>{{listing.city}}, {{listing.state}}, {{listing.zip}}, {{listing.territory}}</h6>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <form method="post" action="/listing/buy">
+                {% csrf_token %}
+                <input type="hidden" name="propertyid" value="{{ listing.id }}">
+                <input type="submit" value="Purchase" class="btn btn-sm btn-primary mt-2 w-100">
+              </form>
+              <a href="{{ listing.get_absolute_url }}" class="btn btn-sm btn-outline-secondary mt-2 w-100">Details</a>
+            </div>
+          </div>
+        </div>
+        <br>
+    {% endfor %}
+-->
