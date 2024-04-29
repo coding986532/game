@@ -5,8 +5,11 @@
     {% for listing in listings %}
       <li>
         <h2>{{ listing.name }}</h2>
-        <p>Price: {{ listing.price }}</p>
-        <p>Location: {{ listing.location }}</p>
+        <p>Price: {{ listing.price }} LBG</p>
+        <p>City: {{ listing.city }}</p>
+        <p>State: {{ listing.state }}</p>
+        <p>Territory: {{ listing.territory }}</p>
+        <p>Zip: {{ listing.zip }}</p>
         <img src="{{ listing.image.url }}" alt="{{ listing.name }} Image">
       </li>
       <form method="post" action="/listing/buy">
