@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Jobs(models.Model):
+class Job(models.Model):
     Listing_Name = models.CharField(max_length=250)
     Employer = models.CharField(max_length=250)
     Government_Agency = models.BooleanField(blank=True)
