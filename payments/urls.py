@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('', views.home, name='home'),
+  #  path('', views.home, name='home'),
     path('listings', views.listonsale, name='listings'),
     path('buy', views.buy, name='buy'),
     path('callback/<int:txid>', views.callback, name='callback'),
