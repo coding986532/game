@@ -12,7 +12,7 @@
             <div class="card-body">
               <h3>{{listing.price}} LBD</h3>
               <h6 class="card-title">{{ listing.street }} <br>{{listing.city}}, {{listing.state}}, {{listing.zip}}, {{listing.territory}}</h6>
-              <p class="card-text mb-5">{{listing.front_description}} </p>
+              <p class="card-text ">{{listing.front_description}} </p>
        
           
               
@@ -25,13 +25,13 @@
               </div>
             </form>
             <div style="text-align:center;">
-              <a href="{{ listing.get_absolute_url }}" class="btn btn-sm btn-outline-secondary mt-2 mb-4 d-block mx-auto" style="width: 95%;">Details</a>
+              <a href="{{ listing.get_absolute_url }}" class="btn btn-sm btn-outline-secondary mt-2 mb-2 d-block mx-auto" style="width: 95%;">Details</a>
             </div>
           </div>
         </div>
         <br>
     {% endfor %}
-
+  
 
     </div> 
 
