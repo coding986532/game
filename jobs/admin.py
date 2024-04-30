@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Joblisting
+from .models import Jobs
 # Register your models here.
 
-class JoblistingAdmin(admin.ModelAdmin):
-    list_display = ('Employer','aTitle','Salary') 
+class JobsAdmin(admin.ModelAdmin):
+    list_display = ('Employer','Title','Salary') 
 
-admin.site.register(Joblisting, JoblistingAdmin)
+admin.site.register(Jobslisting, JobsAdmin)
