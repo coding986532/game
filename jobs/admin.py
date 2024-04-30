@@ -5,4 +5,4 @@ from .models import Jobs
 class JobsAdmin(admin.ModelAdmin):
     list_display = ('Employer','Title','Salary') 
 
-admin.site.register(Jobslisting, JobsAdmin)
+admin.site.register(Jobs, JobsAdmin)
