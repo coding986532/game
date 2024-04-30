@@ -18,10 +18,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from payments import views
-
+from security.views import logon as logon
+from security.views import signup1 as signup
+from security.views import logout_user as logout
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("" , views.home, name='index', ),
     path("listings/" , views.listonsale, name='listings-page', ),
     path('listing/', include('payments.urls')),
+    path("accounts/login/", logon),
+    path("accounts/signup/", signup),
+    path("accounts/logout/", logout)
 ]

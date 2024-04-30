@@ -65,7 +65,6 @@ def ingamepay(request, txid):
         model2.save()
         return redirect(reverse('callback', kwargs={'txid': txid}))
 def callback(request, txid):
-
     model = Transaction.objects.get(id=txid)
     model.Complete = True
     model2 = Listing.objects.get(id=model.Property.id)
