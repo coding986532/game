@@ -21,6 +21,7 @@ property_type_choices = (
 
 ) 
 class Listing(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True, blank=True)
     name = models.CharField(max_length=100, help_text="Name of the property, street specifically, again.")
     property_type = models.CharField(max_length=500, choices=property_type_choices)
     square_feet = models.CharField(max_length=100, blank=True)

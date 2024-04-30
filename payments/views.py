@@ -5,7 +5,7 @@ from django.http import HttpResponse
 from .models import Listing, Transaction, Balance
 # Create your views here.
 def home(request):
-    listings = Listing.objects.all()
+    listings = Listing.objects.order_by('-created_at')[:3]
     return render(request, 'home.html', {'listings': listings})
 def details(request, pk):
     listings = Listing.objects.get(pk=pk)
