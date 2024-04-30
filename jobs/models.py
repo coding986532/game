@@ -13,5 +13,5 @@ class Joblisting(models.Model):
     Bachelors_Pay = models.CharField(max_length=500, blank=True)
     Associate_Pay = models.CharField(max_length=500, blank=True)
     Masters_Pay = models.CharField(max_length=500, blank=True)
-    Doctoral_Pay = models.CharField(max_length=500, blank=True)
+    Doctoral_Pay = models.CharField(max_length=500, blank=True) a
 
