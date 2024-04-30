@@ -43,7 +43,7 @@ def methodselect(request, txid):
     return render(request, 'methodselect.html')
 
 def payment(request, txid):
-    response = render(request, 'ingame.html')
+    
     model = Transaction.objects.get(id=txid)
     print(model.Method)
     if model.Method == 'N/A':
@@ -52,15 +52,16 @@ def payment(request, txid):
         return Exception
     
     if model.Method == 'In Game':
-        return response
+        return redirect(reverse('ingamepayemnt', kwargs={'txid': txid}))
     
 def ingamepay(request, txid):
-    if request.method != 'post':
-        return Exception
-    else:
-        model2 = Balance.objects.get(User=request.user)
+    if request.method == 'get':
+        return render(request, 'ingame.html')
+    elif request.method == 'POST':
+        print('post recived ')
+        model2 = Balance.objects.get(user=request.user)
         model = Transaction.objects.get(id=txid)
-        model2.balance = model2.balance - model.price
+        model2.money = model2.money - model.price
         model2.save()
         return redirect(reverse('callback', kwargs={'txid': txid}))
 def callback(request, txid):
