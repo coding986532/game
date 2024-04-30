@@ -12,15 +12,20 @@
             <div class="card-body">
               <h3>{{listing.price}} LBD</h3>
               <h6 class="card-title">{{ listing.street }} <br>{{listing.city}}, {{listing.state}}, {{listing.zip}}, {{listing.territory}}</h6>
-              <p class="card-text mb-5">{{listing.front_description}} This property is located at {{listing.street}} in {{listing.city}}, {{listing.state}}, {{listing.zip}}.</p>
+              <p class="card-text mb-5">{{listing.front_description}} </p>
        
           
-              <form method="post" action="/listing/buy">
-                {% csrf_token %}
-                <input type="hidden" name="propertyid" value="{{ listing.id }}">
-                <input type="submit" value="Purchase" class="btn btn-sm btn-primary mt-2 w-100 my-0">
-              </form>
-              <a href="{{ listing.get_absolute_url }}" class="btn btn-sm btn-outline-secondary mt-2 w-100 mb-4">Details</a>
+              
+            </div>
+            <form method="post" action="/listing/buy">
+              {% csrf_token %}
+              <input type="hidden" name="propertyid" value="{{ listing.id }}">
+              <div style="text-align:center;">
+                <input type="submit" value="Purchase" class="btn btn-sm btn-primary mt-2 my-0" style="display:inline-block; width: 95%;">
+              </div>
+            </form>
+            <div style="text-align:center;">
+              <a href="{{ listing.get_absolute_url }}" class="btn btn-sm btn-outline-secondary mt-2 mb-4 d-block mx-auto" style="width: 95%;">Details</a>
             </div>
           </div>
         </div>
@@ -30,7 +35,6 @@
 
     </div> 
 
-  </div>
 
 {% endblock %}
 
