@@ -19,7 +19,7 @@ property_type_choices = (
     ('Office', 'Office'),
     ('Other', 'Other'), 
 
-) 
+)  
 class Listing(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
     name = models.CharField(max_length=100, help_text="Name of the property, street specifically, again.")
