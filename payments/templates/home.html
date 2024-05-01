@@ -106,6 +106,38 @@
           
         </div>
  {% endfor %}
+ <br>
+ <br>
+ <br>
+
+ <div class="mb-5"></div>
+<hr>
+ <h1 class="text-center" style="font-family: Playfair Display;">Recent  Job Listings</h1>
+ <hr class="mb-3">
+ <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-2 mb-5">
+   {% for job in jobs %}
+   <div class="col-sm-4 p-2">
+     <div class="card" style="max-width: 26em; height: 10em mb-5">
+       <div class="card-body">
+         <h3>{{job.Salary}} LBD</h3>
+         <h5>{{ job.Title }}</h5>
+         <h6 class="card-title">{{ job.Employer }} <br></h6>
+<br>
+         <h6>{{job.Location_Local}}</h6>
+         <h6>{{job.Location_Broad}}</h6>
+     </div>
+         <div style="text-align:center;">
+           <a href="{{ job.get_absolute_url }}" class="btn btn-sm btn-secondary mt-2 mb-2 d-block mx-auto" style="width: 95%;">Details</a>
+         </div>
+       </div>
+     </div> 
+     <br>
+     <br>
+     <br>
+     
+         
+       </div>
+{% endfor %}
         <!--
   <div class="b-example-divider bg-tertiary"></div>
   <br>

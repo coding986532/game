@@ -4,6 +4,7 @@ from django.urls import reverse
 
 # Create your models here.
 class Program(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True, blank=True)
     University = models.CharField(max_length=100)
     Program = models.CharField(max_length=100)
     location_local = models.CharField(max_length=100)
