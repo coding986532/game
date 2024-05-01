@@ -21,11 +21,13 @@ from payments import views
 from security.views import logon as logon
 from security.views import signup1 as signup
 from security.views import logout_user as logout
+from jobs.views import joblistings
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("" , views.home, name='index', ),
     path("listings/" , views.listonsale, name='listings-page', ),
     path('listing/', include('payments.urls')),
+    path('jobs/', include('jobs.urls')),
     path("accounts/login/", logon),
     path("accounts/signup/", signup),
     path("accounts/logout/", logout)
