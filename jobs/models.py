@@ -20,7 +20,7 @@ class Job(models.Model):
     Title = models.CharField(max_length=500, blank=True)
     Location_Local = models.CharField(max_length=500, blank=True, help_text='Street')
     Location_Broad = models.CharField(max_length=500, blank=True,help_text=' City, State, Zip, Territory')
-
+  
     def get_absolute_url(self):
         path = reverse('jobdetail', args=[self.pk])
         return path
