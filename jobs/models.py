@@ -1,7 +1,14 @@
+from random import choices
 from django.db import models
 from django.urls import reverse
-
+from django.contrib.auth.models import User
 # Create your models here.
+degreetype = (
+    ('Assoicate', 'Assoicate'),
+    ('Bacholers', 'Bacholers'),
+    ('Masters', 'Masters'),
+    ('Doctoral', 'Doctoral'),
+)  
 class Job(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
     Listing_Name = models.CharField(max_length=250)
@@ -25,4 +32,13 @@ class Job(models.Model):
         path = reverse('jobdetail', args=[self.pk])
         return path
 
+class Application(models.Model):
+    Job = models.ForeignKey(Job, on_delete=models.CASCADE)
+    Status = models.BooleanField()
+    User = models.ForeignKey(User, on_delete=models.CASCADE)
 
+class Degree(models.Model):
+    Holder = models.ForeignKey(User, on_delete=models.CASCADE)
+    Title = models.CharField(max_length=200)
+    Type = models.CharField(max_length=200, choices=degreetype)
+   # From = models.ForeignKey(university, on_delete=models.CASCADE)
