@@ -18,6 +18,7 @@ class Job(models.Model):
     Doctoral_Pay = models.CharField(max_length=500, blank=True) 
     Experience = models.CharField(max_length=500, blank=True, help_text='Number of years in experience.') 
     Title = models.CharField(max_length=500, blank=True)
+    Location= models.CharField(max_length=500, blank=True)
     def get_absolute_url(self):
         path = reverse('jobdetail', args=[self.pk])
         return path
