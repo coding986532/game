@@ -11,14 +11,7 @@
 <br>
     <p>Salary: {{ job.Salary }} LBD</p>
     
-    <p>City: {{ listing.city }}</p>
-    <p>State: {{ listing.state }}</p>
-    <p>Territory: {{ listing.territory }}</p>
-    <p>Zip: {{ listing.zip }}</p>  
-    <p>Square Feet: {{ listing.square_feet }} sqft</p>  
-    <p> Lot size: {{ listing.lot_size }}</p>
-    <p>Bedrooms: {{ listing.bedrooms }}</p>
-    <p>Bathrooms: {{ listing.bathrooms }}</p>
+    <p>Address: {{ job.Location_Local }}, {{job.Location_Broad}}</p>
 
     
     <br>
@@ -26,8 +19,8 @@
 <form method="post" action="/listing/buy">
     {% csrf_token %}
 
-    <input type="hidden" name="propertyid" value="{{ listing.id }}">
-    <input type="submit" value="Purchase">
+    <input type="hidden" name="propertyid" value="{{ job.id }}">
+    <input type="submit" value="Apply">
     
   </form>
 
