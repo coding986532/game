@@ -1,7 +1,9 @@
 from django.db import models
+from django.urls import reverse
 
 # Create your models here.
 class Job(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True, blank=True)
     Listing_Name = models.CharField(max_length=250)
     Employer = models.CharField(max_length=250)
     Government_Agency = models.BooleanField(blank=True)
@@ -16,5 +18,8 @@ class Job(models.Model):
     Doctoral_Pay = models.CharField(max_length=500, blank=True) 
     Experience = models.CharField(max_length=500, blank=True, help_text='Number of years in experience.') 
     Title = models.CharField(max_length=500, blank=True)
+    def get_absolute_url(self):
+        path = reverse('jobdetail', args=[self.pk])
+        return path
 
 

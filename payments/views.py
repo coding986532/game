@@ -3,10 +3,17 @@ from venv import create
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Listing, Transaction, Balance
+from jobs.models import Job
 # Create your views here.
 def home(request):
+    jobs = Job.objects.order_by('-created_at')[:3]
     listings = Listing.objects.order_by('-created_at')[:3]
-    return render(request, 'home.html', {'listings': listings})
+    return render(request, 'home.html', {'listings': listings, 'jobs': jobs})
+
+def jobdetail(request, pk):
+    jobs = Job.objects.get(pk=pk)
+    return render(request, 'jobdetail.html', {'jobs': jobs})
+    
 def details(request, pk):
     listings = Listing.objects.get(pk=pk)
     return render(request, "details.htm", {'listing': listings})

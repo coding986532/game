@@ -42,10 +42,10 @@
     <hr>
     <h1 class="text-center" style="font-family: Playfair Display;">Recent Property Listings</h1>
    <hr class="mb-3">
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-2">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-2 mb-5">
       {% for listing in listings %}
       <div class="col-sm-4 p-2">
-        <div class="card" style="max-width: 26em; height: 10em mb-1">
+        <div class="card" style="max-width: 26em; height: 10em mb-5">
           <div class="card-body">
             <h3>{{listing.price}} LBD</h3>
             <h6 class="card-title">{{ listing.street }} <br>{{listing.city}}, {{listing.state}}, {{listing.zip}}, {{listing.territory}}</h6>
@@ -69,7 +69,81 @@
         </div>
       </div>
       <br>
+      <br>
+      <br>
+
   {% endfor %}
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <div class="mb-5"></div>
+<hr>
+  <h1 class="text-center" style="font-family: Playfair Display;">Recent  Job Listings</h1>
+  <hr class="mb-3">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-2 mb-5">
+    {% for job in jobs %}
+    <div class="col-sm-4 p-2">
+      <div class="card" style="max-width: 26em; height: 10em mb-5">
+        <div class="card-body">
+          <h3>{{job.Salary}} LBD</h3>
+          <h6 class="card-title">{{ job.Employer }} <br></h6>
+      </div>
+          <div style="text-align:center;">
+            <a href="{{ job.get_absolute_url }}" class="btn btn-sm btn-secondary mt-2 mb-2 d-block mx-auto" style="width: 95%;">Details</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      
+          
+        </div>
+ {% endfor %}
+        <!--
+  <div class="b-example-divider bg-tertiary"></div>
+  <br>
+  <br>
+
+  <br>
+
+  <br>
+
+  <br>
+
+  <hr>
+  <h1 class="text-center" style="font-family: Playfair Display;">Recent Property Listings</h1>
+ <hr class="mb-3">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-2">
+    {% for listing in listings %}
+    <div class="col-sm-4 p-2">
+      <div class="card" style="max-width: 26em; height: 10em mb-1">
+        <div class="card-body">
+          <h3>{{listing.price}} LBD</h3>
+          <h6 class="card-title">{{ listing.street }} <br>{{listing.city}}, {{listing.state}}, {{listing.zip}}, {{listing.territory}}</h6>
+      
+   
+      
+          
+        </div>
+        <!--
+          
+        <form method="post" action="/listing/buy">
+          {% csrf_token %}
+          <input type="hidden" name="propertyid" value="{{ listing.id }}">
+          <div style="text-align:center;">
+            <input type="submit" value="Purchase" class="btn btn-sm btn-primary mt-2 my-0" style="display:inline-block; width: 95%;">
+          </div>
+        </form> 
+        <div style="text-align:center;">
+          <a href="{{ listing.get_absolute_url }}" class="btn btn-sm btn-secondary mt-2 mb-2 d-block mx-auto" style="width: 95%;">Details</a>
+        </div>
+      </div>
+    </div>
+    <br>
+{% endfor %}
 </body>
 {% endblock %}
 </html>
