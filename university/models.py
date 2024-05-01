@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Programs(models.Model):
+class Program(models.Model):
     University = models.CharField(max_length=100)
     Program = models.CharField(max_length=100)
     location_local = models.CharField(max_length=100)
