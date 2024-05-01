@@ -12,8 +12,8 @@ def home(request):
 
 def jobdetail(request, pk):
     jobs = Job.objects.get(pk=pk)
-    return render(request, 'jobdetail.html', {'jobs': jobs})
-    
+    return render(request, 'jobdetail.html', {'job': jobs})
+
 def details(request, pk):
     listings = Listing.objects.get(pk=pk)
     return render(request, "details.htm", {'listing': listings})
