@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from . models import Uni_Listing
+from . models import Programs
 
 def uni_listing(request):
-    universities = Uni_Listing.objects.all()
+    universities = Programs.objects.all()
     return render(request, 'uni-listings.html', {'offerings':universities})
 
 # Create your views here.
