@@ -10,7 +10,7 @@
 
 <br>
 <h4>General Info</h4>
-    <p>Salary: {{ job.Salary }} LBD</p>
+    <p>Salary Range: {{ job.Salary }} LBD</p>
     
     <p>Location: {{ job.Location_Local }}, {{job.Location_Broad}}</p>
     <br>
@@ -33,7 +33,12 @@
     <p>Doctoral's Yearly Income: {{ job.Doctoral_Pay }} </p>
 
 <br>
+<h4>Exprerience</h4>
+<p>Exprerience Preference: {{ job.Experience }} </p>
+<br>
+<h4>Other Details</h4>
     <p>Description: {{ listing.back_description }}</p>
+    <br>
 <form method="post" action="/listing/buy">
     {% csrf_token %}
 
