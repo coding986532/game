@@ -1,4 +1,6 @@
 from django.db import models
+from django.urls import reverse
+
 
 # Create your models here.
 class Program(models.Model):
@@ -16,3 +18,5 @@ class Program(models.Model):
     Description = models.TextField(max_length=1000)
     Max_Capacity = models.CharField(max_length=100)
     Max_Applications = models.CharField(max_length=100)
+    def get_absolute_url(self):
+        return reverse('uni-detail', args=[self.pk])

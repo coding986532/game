@@ -1,0 +1,51 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+<br> 
+<h1>{{ offerings.Program }}</h1>
+
+<br>
+  
+
+<br>
+<h4>General Info</h4>
+    <p>Salary Range: {{ job.Salary }} LBD</p>
+    <p>Employer: {{ job.Employer }}</p>
+    <p>Government Agency: <b>{{ job.Government_Agency }}</b></p>
+    <p>Location: {{ job.Location_Local }}, {{job.Location_Broad}}</p>
+    <br>
+    <H4>Educational Preferences</H4>
+
+    <p>Associate's Preference: {{ job.Associate }} </p
+    <p>Bachelor's Preference: {{ job.Bachelors }} </p>
+    <p>Master's Preference: {{ job.Masters }} </p>
+    <p>Doctoral's Preference: {{ job.Doctoral }} </p>
+
+    
+
+    
+    <br>
+    <H4>Salary</H4>
+        
+    <p>Associate's Yearly Income: {{ job.Associate_Pay }} </p>
+    <p>Bachelor's Yearly Income: {{ job.Bachelors_Pay }} </p>
+    <p>Master's Yearly Income: {{ job.Masters_Pay }} </p>
+    <p>Doctoral's Yearly Income: {{ job.Doctoral_Pay }} </p>
+
+<br>
+<h4>Exprerience</h4>
+<p>Exprerience Preference: {{ job.Experience }} </p>
+<br>
+<h4>Other Details</h4>
+    <p>Description: {{ listing.back_description }}</p>
+    <br>
+<form method="post" action="/listing/buy">
+    {% csrf_token %}
+
+    <input type="hidden" name="propertyid" value="{{ job.id }}">
+    <input type="submit" value="Apply">
+    
+  </form>
+
+  {% endblock %}
