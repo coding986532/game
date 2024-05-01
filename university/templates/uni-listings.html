@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<br>
+  <h1>Job Listings</h1>
+  <br>
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-2">
+        {% for offering in offerings %}
+        <div class="col-sm-4 p-2">
+          <div class="card" style="max-width: 26em; height: 10em mb-5">
+            <div class="card-body">
+              <h3>{{offering.Program}} </h3>
+              <h5>{{ offering.University }} LBD</h5>
+              <h6 class="card-title">{{ offering.tuition }} <br></h6>
+    <br>
+              <h6>{{offering.location_local}}</h6>
+              <h6>{{offering.location_broad}}</h6>
+          </div>
+              <div style="text-align:center;">
+                <a href="{{ offering.get_absolute_url }}" class="btn btn-sm btn-secondary mt-2 mb-2 d-block mx-auto" style="width: 95%;">Details</a>
+              </div>
+            </div>
+          </div> 
+          {% endfor %}
+  
+<!-- test -->
+    </div> 
+
+
+{% endblock %}

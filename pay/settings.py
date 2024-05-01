@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     "payments",
     'jobs',
     'security',
+    'university',
+    'marketplace',
 ]
 
 MIDDLEWARE = [

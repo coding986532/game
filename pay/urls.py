@@ -28,6 +28,8 @@ urlpatterns = [
     path("listings/" , views.listonsale, name='listings-page', ),
     path('listing/', include('payments.urls')),
     path('jobs/', include('jobs.urls')),
+   # path("accounts/", include("security.urls")),
+    path("university/", include("university.urls")),
     path("accounts/login/", logon),
     path("accounts/signup/", signup),
     path("accounts/logout/", logout)

@@ -14,3 +14,5 @@ class Uni_Listing(models.Model):
     Enrollment_Start = models.CharField(max_length=100)
     Enrollment_End = models.CharField(max_length=100)
     Description = models.TextField(max_length=1000)
+    Max_Capacity = models.CharField(max_length=100)
+    Max_Applications = models.CharField(max_length=100)
