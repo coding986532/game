@@ -6,8 +6,10 @@ from .models import Job, Application
 def joblistings(request):
     jobs = Job.objects.all()
     return render(request, 'joblist.html', {'jobs': jobs})
-def jobapply(request, jobid):
-    jobdata = job.objects.get(id=jobid)
+def jobsapply(request, jobid):
+    if request.method == 'GET':
+        return render(request, 'eassy.html')
+    jobdata = Job.objects.get(id=jobid)
     model = Application()
     model.Job = jobdata
     model.User = request.User

@@ -31,6 +31,8 @@ class Job(models.Model):
     def get_absolute_url(self):
         path = reverse('jobdetail', args=[self.pk])
         return path
+    def applyurl(self):
+        return reverse('apply', args=[self.pk])
 
 class Application(models.Model):
     Job = models.ForeignKey(Job, on_delete=models.CASCADE)
