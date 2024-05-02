@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Listing, Transaction, Balance
 from jobs.models import Job
-from university.models import Program
+from university.models import Program  
 # Create your views here.
 def home(request):
     jobs = Job.objects.order_by('-created_at')[:3]
