@@ -60,14 +60,25 @@ def payment(request, txid):
     
 def ingamepay(request, txid):
     print(txid)
-    if request.method == 'get':
-        return render(request, 'ingame.html')
+    print(request.method)
+    if request.method == 'GET':
+        try: 
+             return render(request, 'ingame.html')
+        except Exception as e:
+            print('error 1')
+            print(e)
     elif request.method == 'POST':
-        print('post recived ')
-        model2 = Balance.objects.get(user=request.user)
-        model = Transaction.objects.get(id=txid)
-        model2.money = model2.money - model.price
-        model2.save()
+        try:
+            print('post recived ')
+            model2 = Balance.objects.get(user=request.user)
+        except Exception as e:
+            print("error 2")
+        try:
+            model = Transaction.objects.get(id=txid)
+            model2.money = model2.money - model.price
+            model2.save()
+        except Exception as e:
+            print("error 3")
         return redirect(reverse('callback', kwargs={'txid': txid}))
 def callback(request, txid):
     model = Transaction.objects.get(id=txid)
