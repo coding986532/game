@@ -30,7 +30,7 @@ def buy(request):
         model = Listing.objects.get(id=property)
         
         createtransaction = CreateTransaction(model, request.user)
-        response = redirect(reverse('methodselect', kwargs={'txid': createtransaction}))
+        response = redirect(reverse('payment', kwargs={'txid': createtransaction}))
         return response
     
 def CreateTransaction( property, user):
@@ -40,17 +40,11 @@ def CreateTransaction( property, user):
     model.Complete = False
     model.method = 'N/A'
     model.price = property.price
+    model.Method = "In Game"
     model.save()
 
     return model.id
-def methodselect(request, txid):
-    if request.method == 'POST':
-        response = redirect(reverse('payment', kwargs={'txid': txid}))
-        model = Transaction.objects.get(id=txid)
-        model.Method = request.POST['paymethod']
-        model.save()
-        return response
-    return render(request, 'methodselect.html')
+
 
 def payment(request, txid):
     
