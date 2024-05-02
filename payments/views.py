@@ -59,6 +59,7 @@ def payment(request, txid):
         return redirect(reverse('ingamepayemnt', kwargs={'txid': txid}))
     
 def ingamepay(request, txid):
+    print(txid)
     if request.method == 'get':
         return render(request, 'ingame.html')
     elif request.method == 'POST':
