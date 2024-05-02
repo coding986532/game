@@ -15,16 +15,20 @@
             <a class="navbar-brand  mb-0" style="font-family: Playfair Display; font-size: 1.851em;" href="{% url 'index' %}">LucidBridge</a>
  
             <ul class="nav">
+              {% if user.is_authenticated %}
+
                 <li class="nav-item">
-                  <a class=" btn btn-sm btn-outline-secondary mt-1 mx-2 " aria-current="page" href="/listings">Property Listings</a>
-                </li>
-                <li class="nav-item">
-                  <a class=" btn btn-sm btn-outline-secondary mt-1 mx-2 " aria-current="page" href="/jobs/job-offers">Job Listings</a>
-                </li>
-                <li class="nav-item">
-                    <a class=" btn btn-sm btn-outline-secondary mt-1 mx-2" aria-current="page" href="/admin">Administrative</a>
+
+                     <a class=" btn btn-sm btn-outline-secondary mt-1 mx-2" aria-current="page" href="/accounts/login">Log In</a>
+                      
                   </li>
-             
+                  {% else %}
+                <li class="nav-item">
+
+                  <a class=" btn btn-sm btn-outline-secondary mt-1 mx-2" aria-current="page" href="/accounts/logout">Log Out</a>
+                </li>
+               
+                  {% endif %}
                 </li>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
