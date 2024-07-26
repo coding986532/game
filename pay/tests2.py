@@ -4,13 +4,13 @@ import json
 from security.views import apitokencheck
 class ApiLogonTestCase(TestCase):
     def setUp(self):
-        self.user = User.objects.create_user(username='testuser', password='testpassword')
+        self.user = User.objects.create_user(username='testuser', password='YmVuZWZpdHNoaXA=')
         self.client = Client()
 
     def test_apilogon_success(self):
         data = {
             'user': 'testuser',
-            'pw': 'testpassword'
+            'pw': 'YmVuZWZpdHNoaXA='
         }
         response = self.client.post('/apilogon', json.dumps(data), content_type='application/json')
         print(response.content)
@@ -24,7 +24,7 @@ class ApiLogonTestCase(TestCase):
     def test_sig_verify(self):
         data = {
             'user': 'testuser',
-            'pw': 'testpassword'
+            'pw': 'YmVuZWZpdHNoaXA='
         }
         response = self.client.post('/apilogon', json.dumps(data), content_type='application/json')
         print(response.content)
