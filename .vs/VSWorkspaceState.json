@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\pay",
-    "\\payments"
+    "\\payments",
+    "\\pay\\tests",
+    "\\security"
   ],
-  "SelectedNode": "\\payments\\views.py",
+  "SelectedNode": "\\security\\views.py",
   "PreviewInSolutionExplorer": false
 }

@@ -21,6 +21,7 @@ from payments import views
 from security.views import logon as logon
 from security.views import signup1 as signup
 from security.views import logout_user as logout
+from security.views import apilogon
 from jobs.views import joblistings
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -32,5 +33,6 @@ urlpatterns = [
     path("university/", include("university.urls")),
     path("accounts/login/", logon),
     path("accounts/signup/", signup),
-    path("accounts/logout/", logout)
+    path("accounts/logout/", logout),
+    path("apilogon", apilogon)
 ]

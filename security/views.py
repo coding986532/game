@@ -1,3 +1,4 @@
+from operator import truediv
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.contrib.auth import authenticate, login, logout
@@ -11,10 +12,15 @@ import hashlib
 from pathlib import Path
 import os
 import rsa
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.asymmetric import ec
+from cryptography.hazmat.primitives.serialization import load_pem_private_key
+from cryptography.hazmat.primitives.serialization import load_pem_public_key
+import base64
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 pubkeypath=os.path.join(BASE_DIR, 'public.pem')
-privatekeypath=os.path.join(BASE_DIR, 'priavte.pem')
+privatekeypath=os.path.join(BASE_DIR, 'private.pem')
 # Create your views here.
 def logout_user(request):
     if request.method != "POST":
@@ -22,28 +28,62 @@ def logout_user(request):
     else:
         logout(request)
         return redirect('/')
+def apitokencheck(jwtdict):
+
+    token1 = bytes(jwtdict['apitoken'],'UTF-8')
+    with open(pubkeypath, "rb") as key_file:
+        public_key = load_pem_public_key(key_file.read())
+    signature = bytes.fromhex(jwtdict['apitokensig'])
+    try:
+        public_key.verify(
+        signature,
+        token1,
+        ec.ECDSA(hashes.SHA256())
+    )
+        return True
+    except Exception:
+        return False
+
+
+
+
+
+
 def apilogon(request):
     if request.method == 'POST':
-        dict = json.loads(request.body)
-        user = authenticate(request, username=dict.user, password=dict.pw)
-        if user is not None:
-            expiration_time = datetime.now(datetime.utc) + timedelta(days=1)
-            uuid = str(uuid.uuid4())
-            hashuuid = hashlib.sah256(uuid).digest()
+        data = json.loads(request.body)
+        print(data)  # For debugging purposes
+
+            # Extract username and password from the dictionary
+        username = data.get('user')
+        password = data.get('pw')
+
+            # Authenticate the user
+        user = authenticate(request, username=username, password=password)
+    if user is not None:
+            expiration_time = datetime.utcnow() + timedelta(days=1)
+            uuid2 = bytes(str(uuid.uuid4()), 'UTF-8')
+
             with open(privatekeypath, 'rb') as private:
-                priavte_key = rsa.PrivateKey.load_pkcs1(private.read(), format='PEM')
-            with open(pubkeypath, 'rb') as public:
-                public_key = rsa.PrivateKey.load_pkcs1(public.read(), format='PEM')
-            apitoken = rsa.sign(hashuuid, priavte_key, 'SHA-256')
-            secret = b'OIDFJIODSFJIODSFJIU(IOJEOJFODJFOSJDFIOSJDOFIJDSOFIJDSOIJSODIJDOFJ8383mc8rm28xmf8emdbitacoindf8asdfmunchymicrosfotgood)'
-            jwtdict={
-                'user': dict.user, 
-                'exp': expiration_time,
-                'apitoken': apitoken,
-            }
-            token = jwt.encode(jwtdict, secret, algorithm='HS256')
-            return JsonResponse({'status': 'Good', 'token': token})
-        else:
+                private_key = load_pem_private_key(private.read(), password=None)
+
+            apitoken =  private_key.sign(
+            uuid2,
+            ec.ECDSA(hashes.SHA256())
+)
+            jwtdict = {
+                    'user': username,
+                    'exp': expiration_time.isoformat(),
+                    'apitoken': uuid2.decode('utf-8'),
+                    'apitokensig': apitoken.hex(),  # Convert to hex for easier reading
+                    'Privlages': [
+                        "Buy Property",
+                        "Read All",
+                    ]
+                }
+
+            return JsonResponse({'status': 'Good', 'token': jwtdict})
+    else:
             return JsonResponse({'status': 'error', 'token':'NULL'}, status=401)
 def logon(request):
     if request.method != "POST":
